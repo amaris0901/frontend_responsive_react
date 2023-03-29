@@ -11,9 +11,9 @@ import {
 function Content() {
   return (
     <Grid>
-      <Box component="main" sx={{ maxWidth: 600 }}>
+      <Box component="main">
         <Typography variant="h4">Welcome to My Website</Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" sx={{ mt: 2}}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
           veritatis cupiditate quasi nemo voluptatum! Ipsa, quasi possimus nobis
           harum voluptatibus ducimus, odit aperiam quam quibusdam quisquam iure
@@ -26,9 +26,9 @@ function Content() {
         </Typography>
       </Box>
 
-      <Grid container rowSpacing={1} columnSpacing={1}>
-        <Grid item>
-          <Card sx={{ maxWidth: 275 }}>
+      <Grid container rowSpacing={2} columnSpacing={2} sx={{mt:1}}>
+        <Grid item xs={12} sm={12} md={6}>
+          <Card >
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -51,8 +51,8 @@ function Content() {
           </Card>
         </Grid>
 
-        <Grid item>
-          <Card sx={{ maxWidth: 275 }}>
+        <Grid item xs={12} sm={6} md={6}>
+          <Card>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -74,8 +74,8 @@ function Content() {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item>
-          <Card sx={{ maxWidth: 275 }}>
+        <Grid item xs={12} sm={6} md={6}>
+          <Card>
             <CardActionArea>
               <CardMedia
                 component="img"

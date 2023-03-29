@@ -1,12 +1,12 @@
 import { Typography,ImageList, ImageListItem } from "@mui/material";
-import { Box, height, width } from "@mui/system";
+import { Box} from "@mui/system";
 export default function Rightbar(){
     return(
         <Box display="flex" flexDirection="column">
             <Typography>
                 Latest Photos
             </Typography>
-            <ImageList variant="standard" cols={2} sx={{width:250}} >
+            <ImageList  sx={{width:250}} cols={2}>
                <ImageListItem >
                     <img src="./assets/IMG_2576.jpg" />
                 </ImageListItem> 

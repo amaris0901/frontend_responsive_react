@@ -9,7 +9,7 @@ import { List,ListItem,ListItemIcon,ListItemText,Box } from '@mui/material';
 
 export default function Sidebar(){
     return(
-        <Box display="flex"justifyContent="flex-end">
+        <Box display="flex"sx={{ justifyContent: 'flex-end'}}>
             <List>
                 <ListItem button>
                     <ListItemIcon>
